@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Elegance</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<title>Elegance</title>
 </head>
 <body>
 
@@ -19,7 +20,7 @@
         <nav class="header__nav">
             <ul class="nav__list">
                 <li><a href="#hero">Inicio</a></li>
-                <li><a href="#caracteristicas">Caracterisiticas</a></li>
+                <li><a href="#aver">Caracterisiticas</a></li>
                 <li><a href="#sobre-nosotros">acerca de</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
@@ -30,32 +31,36 @@
 
     <div class="container">
         <section id="hero">
-            <h1 class="hero__title">diseños web con <p>UX/UI</p> excepcionales </h1>
+            <h1 class="hero__title">diseños web con <h1 class="hero__title t1">UX/UI</h1> <h1 class="hero__title"> excepcionales </h1>
             <p class="hero__desc">Cree websites impresionantes a medida de cada necesidad</p>
-            <a href=""><button class="hero__btn">Explore Feautures</button></a>
-            <a href=""><button class="hero__btn">Contact Us</button></a>
+            <div class="contain__btn">
+                <a href="#caracteristicas"><button class="hero__btn">Explorar funciones</button></a>
+                <a href="#contacto"><button class="hero__btn btn2">Contactos</button></a>
+            </div>
+            <img class="arrow-down" src="./assets/arrow-down.svg" alt="arrow-down">
+            <p class="hero__scroll" id="aver">Scroll Down</p>              
         </section>
-        <section id="caracteristicas">
-            <h1>nuestras Caracterisiticas</h1>
-            <p>todo lo que necesitas para crear diseños impresionantes</p>
-            <div class="caracterisitcas__container">
-                <div class="card1">
-                    <img src="" alt="icon-card">
+        <section id="caracteristicas" data-aos="fade-up" data-aos-duration="500">
+            <h1 id="aver2">nuestras Caracterisiticas</h1>
+            <h3>todo lo que necesitas para crear diseños impresionantes</h3>
+            <div class="caracteristicas__container">
+                <div class="card">
+                    <img src="./assets/phone.svg" alt="icon-card">
                     <h2>Diseño Responsivo</h2>
                     <p>buena compatibilidad visual en todos los dispositivos, adaptandose a la mayoria de las pantallas</p>
                 </div>
-                <div class="card2">
-                    <img src="" alt="icon-card">
+                <div class="card">
+                    <img src="./assets/cloud.svg" alt="icon-card">
                     <h2>Animaciones suaves</h2>
                     <p>Se utilizan animaciones sutiles mejorando la experiencia de usuario sin abrumar</p>
                 </div>
-                <div class="card3">
-                    <img src="" alt="icon-card">
+                <div class="card">
+                    <img src="./assets/fast.svg" alt="icon-card">
                     <h2>Rendimiento rapido</h2>
                     <p>Un código liviano garantiza que su sitio web se cargue rápidamente para todos los usuarios.</p>
                 </div>
-                <div class="card4">
-                    <img src="" alt="icon-card">
+                <div class="card">
+                    <img src="./assets/add.svg" alt="icon-card">
                     <h2>Accesibilidad</h2>
                     <p>Creado teniendo en cuenta la accesibilidad para garantizar que todos puedan usar su sitio.</p>
                 </div>
@@ -123,7 +128,11 @@
             </div>
             <p>&copy; 2023 Elegance. Todos los derechos reservados.</p>
         </div>
-
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    </script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
