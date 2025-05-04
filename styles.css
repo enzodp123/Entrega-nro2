@@ -357,6 +357,8 @@ body{
     border-radius: 20px;
 }
 
+/*CONTACTO*/
+
 #contacto{
     scroll-margin-top: 10vh;
     display: flex;
@@ -525,6 +527,47 @@ textarea::placeholder{
     transform: scale(1.03);
 }
 
+/*FOOTER*/
+
+#footer{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    gap: .2em;
+    justify-content: center;
+    align-items: center;
+    background-color: #6965F2;
+}
+
+#footer h1{
+    font-size: 3em;
+    position: relative;
+    font-weight: 800;
+    color:#fff;
+    text-align: center;
+    border-radius: 4px;
+}
+
+#footer p{
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 1em;
+}
+
+.container__logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    gap: 3em;
+}
+
+.container__logos img{
+    width: 50px;
+}
 
 /* Media query: tablets */
 @media ( 800px <= width <= 1200px) {
