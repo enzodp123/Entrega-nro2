@@ -22,7 +22,7 @@ body{
 
 #header{
     width: 100%;
-    height: 10vh;
+    height: 9vh;
     background-color: #f0f0f030;
     backdrop-filter: blur(10px);
     display: flex;
@@ -82,6 +82,7 @@ body{
 #hero{
     width: 100%;
     height: 100vh;
+    scroll-margin-top: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -175,6 +176,7 @@ body{
 /*CARACTERISTICAS*/
 
 #caracteristicas{
+    scroll-margin-top: 10vh;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -261,10 +263,267 @@ body{
     
 }
 
+/*ACERCA DE*/
 
+#sobre-nosotros{
+    scroll-margin-top: 10vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-content: center;
+    justify-items: center;
 
+    width: 80%;
+    height: 100vh;
+    padding: 5em 0em;
+    align-items: center;
+    justify-content: center;
+}
 
+.acerca-de{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5em;
+}
 
+.acerca-de h1{
+    font-size: 3em;
+    position: relative;
+    font-weight: 800;
+    color:#1e293b;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.acerca-de h1::after{
+    content: '';
+    position: absolute;
+    width:  60%;
+    border-radius: 15%;
+    height: 5px;
+    background-color: #6965F2;
+    bottom: -10%;
+    left: 20%;
+}
+
+.acerca-de p{
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #64748b;
+    text-align:unset;
+    width: 80%;
+}
+
+.acerca-de__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 2em;
+    width: 100%;
+    justify-items: start;
+}
+
+.acerca-de__grid h2{
+    background: #6965F2;
+    font-size: 3em;
+    background: -webkit-linear-gradient(120deg, rgba(105, 101, 242, 1) 50%, rgba(135, 94, 246, 1) 100%);
+    background: -moz-linear-gradient(120deg, rgba(105, 101, 242, 1) 50%, rgba(135, 94, 246, 1) 100%);
+    background: linear-gradient(120deg, rgba(105, 101, 242, 1) 50%, rgba(135, 94, 246, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6965F2", endColorstr="#875EF6", GradientType=0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.acerca-de__grid p{
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #64748b;
+    text-align: unset;
+}
+
+.acerca-de2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #6965F2;
+    width: 100%;
+    height: 80%;   
+    background: -webkit-linear-gradient(120deg, rgba(105, 101, 242, 1) 50%, rgba(135, 94, 246, 1) 100%);
+    background: -moz-linear-gradient(120deg, rgba(105, 101, 242, 1) 50%, rgba(135, 94, 246, 1) 100%);
+    background: linear-gradient(120deg, rgba(105, 101, 242, 1) 50%, rgba(135, 94, 246, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6965F2", endColorstr="#875EF6", GradientType=0);
+    border-radius: 20px;
+}
+
+#contacto{
+    scroll-margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100vh;
+}
+
+#contacto h1{
+    font-size: 3em;
+    position: relative;
+    font-weight: 800;
+    color:#1e293b;
+    text-align: center;
+    border-radius: 4px;
+}
+
+#contacto h1::after{
+    content: '';
+    position: absolute;
+    width:  60%;
+    border-radius: 15%;
+    height: 5px;
+    background-color: #6965F2;
+    bottom: -10%;
+    left: 20%;
+}
+
+#contacto p{
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: 500;
+    color: #64748b;
+    margin-top: 1em;
+}
+
+.container__contacto{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -3em;
+
+}
+
+.contacto--cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 45%;
+    height: 80%;
+    gap: 3em;
+}
+
+.contacto--card{
+    width: 100%;
+    height: 25%;
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 25px 15px -26px rgba(66, 68, 90, 0.617);
+    -moz-box-shadow: 0px 25px 15px -26px rgba(66, 68, 90, 0.617);
+    box-shadow: 0px 25px 15px -26px rgba(66, 68, 90, 0.617);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0em 3em;
+    transition: all 0.3s ease-in-out;
+}
+
+.contacto--card:hover{
+    transform: translateY(-10px);
+}
+
+.contacto--card h3{
+    font-size: 1.5em;
+    font-weight: 700;
+    background: #6965F2;
+    background: -webkit-linear-gradient(120deg, rgba(105, 101, 242, 1) 50%, rgba(135, 94, 246, 1) 100%);
+    background: -moz-linear-gradient(120deg, rgba(105, 101, 242, 1) 50%, rgba(135, 94, 246, 1) 100%);
+    background: linear-gradient(120deg, rgba(105, 101, 242, 1) 50%, rgba(135, 94, 246, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6965F2", endColorstr="#875EF6", GradientType=0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contacto--card p{
+    font-size: 1em;
+    font-weight: 500;
+    color: #64748b;
+    text-align: unset;
+}
+
+.form-contacto{
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 25px 15px -26px rgba(66, 68, 90, 0.617);
+    -moz-box-shadow: 0px 25px 15px -26px rgba(66, 68, 90, 0.617);
+    box-shadow: 0px 25px 15px -26px rgba(66, 68, 90, 0.617);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 73%;
+}
+
+.form-contacto form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-top: 1em;
+    width: 80% ;
+    }
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dce1e7;
+    border-radius: 8px;
+    font-size: 16px;
+    resize: none;
+    box-sizing: border-box;
+    font-family: 'montserrat', sans-serif;
+}
+
+textarea::placeholder{
+    font-size: 16px;
+    color: #999;
+}
+
+.btn-submit {
+    background: linear-gradient(135deg, #7f5af0, #7950f2);
+    color: white;
+        padding: 12px 30px;
+    border: none;
+    border-radius: 999px;
+    font-size: 16px;
+    margin-top: 1.3em;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(127, 90, 240, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.btn-submit:hover {
+    transform: scale(1.03);
+}
 
 
 /* Media query: tablets */
