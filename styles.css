@@ -496,27 +496,27 @@ label {
 
 input, textarea {
     width: 100%;
-    padding: 12px;
+    padding: 1em;
     border: 1px solid #dce1e7;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 1em;
     resize: none;
     box-sizing: border-box;
     font-family: 'montserrat', sans-serif;
 }
 
 textarea::placeholder{
-    font-size: 16px;
+    font-size: 1em;
     color: #999;
 }
 
 .btn-submit {
     background: linear-gradient(135deg, #7f5af0, #7950f2);
     color: white;
-        padding: 12px 30px;
+    padding: 1em 2em;
     border: none;
-    border-radius: 999px;
-    font-size: 16px;
+    border-radius: 3em;
+    font-size: 1.3em;
     margin-top: 1.3em;
     cursor: pointer;
     box-shadow: 0 8px 20px rgba(127, 90, 240, 0.3);
@@ -572,13 +572,168 @@ textarea::placeholder{
 /* Media query: tablets */
 @media ( 800px <= width <= 1200px) {
     .nav__list li a{
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
+    .caracteristicas__container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        width: 90%;
+    }
+    .card h2{
+        text-align: center;
+    }
+    #contacto{
+        height: 150vh;
+    }
+    .container__contacto{
+        flex-direction: column;
+    }
+    .contacto--cards{
+        width: 100%;
+        height: 50%;
+        gap: 2em;
+    }
+    .form-contacto{
+        width: 100%;
+        height: 50%;
+    }
+    .form-contacto form{
+        width: 100%;
+        height: 100%;
+    }
+    
 }
 
 /*Media query: móviles */
-@media (120px <= width <= 800px) {
+@media (300px <= width <= 800px) {
     .nav__list li a {
         display: none;
+    }
+    .hero__title{
+        font-size: 2.5em;
+    }
+    .hero__desc{
+        font-size: 1.2em;
+        width: 80%;
+    }
+    .hero__btn{
+        font-size: 1em;
+        padding: 0.5em 1em;
+    }
+    .btn2{
+        font-size: 1em;
+        padding: 0.5em 1em;
+    }
+    .hero__scroll{
+        font-size: 1em;
+    }
+    .arrow-down{
+        width: 30px;
+        height: 30px;
+    }
+    .caracteristicas__container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+    }
+    #caracteristicas{
+        height: auto;
+    }
+    #caracteristicas h1{
+        font-size: 2.5em;
+        text-align: center;
+    }
+    #caracteristicas h3{
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .card{
+        width: 100%;
+        height: 100%;
+        padding: 2em 1em;
+    }
+    .card h2{
+        text-align: center;
+    }
+    .card p{
+        font-size: 1em;
+        text-align: center;
+    }
+    #sobre-nosotros{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+    .acerca-de{
+        width: 100%;
+        height: auto;
+        gap: 2em;
+    }
+    .acerca-de h1{
+        font-size: 2.5em;
+        text-align: center;
+        width: 100%;
+    }
+    .acerca-de p{
+        font-size: 1.2em;
+        text-align: center;
+        width: 100%;
+    }
+    .acerca-de2{
+        display: none;
+    }
+    .acerca-de__card{
+        width: 100%;
+        height: auto;
+    }
+    .acerca-de__grid h2{
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    .acerca-de__grid p{
+        font-size: 1em;
+        text-align: center;
+    }
+    #contacto{
+        height: 190vh;
+    }
+    .container__contacto{
+        flex-direction: column;
+    }
+    .contacto--cards{
+        width: 100%;
+        height: 50%;
+        gap: 2em;
+    }
+    .form-contacto{
+        width: 100%;
+        height: 50%;
+    }
+    .form-contacto form{
+        width: 100%;
+        height: 100%;
+    }
+    #footer{
+        height: 40vh;
+        justify-content: space-evenly;
+    }
+    #footer h1{
+        font-size: 2.5em;
+    }
+    #footer p{
+        font-size: 1.2em;
+    }
+    .container__logos{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .container__logos img{
+        width: 40px;
     }
 }
