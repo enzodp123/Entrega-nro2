@@ -584,7 +584,7 @@ textarea::placeholder{
         text-align: center;
     }
     #contacto{
-        height: 150vh;
+        height: 190vh;
     }
     .container__contacto{
         flex-direction: column;
