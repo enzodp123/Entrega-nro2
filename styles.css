@@ -468,7 +468,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 73%;
+    height: 80%;
 }
 
 .form-contacto form{
@@ -477,8 +477,10 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 90%;
+    height: 100%;
+    padding: 2em 2em;
     border-radius: 10px;
+    gap: 1em;
     box-shadow: 0 2px 15px rgba(0,0,0,0.05);
 }
 
@@ -513,11 +515,10 @@ textarea::placeholder{
 .btn-submit {
     background: linear-gradient(135deg, #7f5af0, #7950f2);
     color: white;
-    padding: 1em 2em;
     border: none;
     border-radius: 3em;
     font-size: 1.3em;
-    margin-top: 1.3em;
+    padding: 0.5em 2em;
     cursor: pointer;
     box-shadow: 0 8px 20px rgba(127, 90, 240, 0.3);
     transition: transform 0.2s ease;
@@ -700,24 +701,41 @@ textarea::placeholder{
         text-align: center;
     }
     #contacto{
-        height: 190vh;
+        height: auto;
+        gap: 4em;
     }
     .container__contacto{
         flex-direction: column;
+        gap: 2em;
     }
+
     .contacto--cards{
         width: 100%;
         height: 50%;
         gap: 2em;
+        margin-top: 2em;
+    }
+    .contacto--card{
+        width: 100%;
+        height: 100%;
+        padding: 2em 1em;
     }
     .form-contacto{
         width: 100%;
         height: 50%;
+        margin-bottom: 2em;
     }
     .form-contacto form{
         width: 100%;
         height: 100%;
+        padding: 2em 1em;
     }
+
+    .btn-submit {
+        font-size: 1em;
+        padding: 0.5em 1em;
+    }
+
     #footer{
         height: 40vh;
         justify-content: space-evenly;
